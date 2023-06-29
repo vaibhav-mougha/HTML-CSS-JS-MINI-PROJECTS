@@ -11,7 +11,6 @@ This website provides a collection of small web projects created using HTML, CSS
 - Vaibhav Mougha ( My Linkedin profile :- https://www.linkedin.com/in/vaibhavmougha/ )
 
 <br/>
-<br/>
 
 <h1 align="center">🖥️ Tech Stack</h1>
 
