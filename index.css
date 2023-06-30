@@ -13,7 +13,13 @@ body {
   font-size: 5rem;
   text-align: center;
   text-decoration: underline;
-  margin-top: 4rem;
+  background-color: #FFFFFF;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
   /* border: 3px dotted #ccc; */
 }
 
@@ -25,7 +31,7 @@ body {
   border-radius: 2rem;
   width: 90%;
   margin: auto;
-  margin-top: 4rem;
+  margin-top: 14rem;
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -51,10 +57,6 @@ a:hover {
   text-decoration: underline;
 }
 
-#goBackBtnContainer {
-  position: relative;
-}
-
 .goBackBtn {
   background-color: red;
   color: #ffffff;
@@ -65,7 +67,8 @@ a:hover {
   font-weight: bold;
   cursor: pointer;
   position: fixed;
-  margin-top: -3rem;
+  z-index: 2;
+  top: 1rem;
   margin-left: 2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -73,4 +76,21 @@ a:hover {
 .goBackBtn:hover {
   color: red;
   background-color: white;
+}
+
+#scrollButton {
+  display: none; /* Hide the button by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
 }

@@ -15,9 +15,8 @@
   </head>
 
   <body>
-    <div id="goBackBtnContainer">
-      <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
-    </div>
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+    
     <a href="index.html">
       <h1 id="heading">HTML CSS JS Mini Projects</h1>
     </a>
@@ -29,7 +28,7 @@
           font-size: 3rem;
           text-decoration: underline;
           text-align: center;
-          margin-top: 3rem;
+          margin-top: 12rem;
         "
       >
         Accordion Menu
@@ -137,10 +136,17 @@
         </div>
       </div>
     </div>
+
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+      Top
+    </button>
   </body>
 </html>
+
 <script>
   function goBack() {
     window.history.back();
   }
 </script>
+
+<script src="../index.js"></script>
