@@ -1,0 +1,66 @@
+/* type can be radio also */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 50rem;
+  margin-bottom: 3rem;
+  background-color: #ffffff;
+}
+
+.accordion {
+  /* width: 90%; */
+  margin: 50px;
+  background-color: white;
+}
+
+.accordion-tab .accordion-toggle {
+  display: none;
+}
+
+.accordion-tab > label {
+  color: white;
+  background-color: #227abe;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  padding: 12px 30px 12px 20px;
+  cursor: pointer;
+  border-top: 1px solid #dadde0;
+}
+
+.accordion-tab > label:after {
+  content: "\f078";
+  font-family: fontawesome;
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+
+.accordion-tab > .accordion-toggle:checked ~ label:after {
+  transform: rotate(0deg);
+}
+
+.accordion-tab > .accordion-content {
+  max-height: 0;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+
+.accordion-tab > .accordion-content p {
+  padding: 15px 20px;
+  line-height: 20px;
+}
+
+.accordion-tab > .accordion-toggle:checked ~ .accordion-content {
+  max-height: 100vh;
+}

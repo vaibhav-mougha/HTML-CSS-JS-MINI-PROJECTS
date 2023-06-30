@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="accordian.css" />
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+
+  <body>
+    <div id="goBackBtnContainer">
+      <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+    </div>
+    <a href="index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="accordian.html"
+      ><h1
+        style="
+          color: #227abe;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 3rem;
+        "
+      >
+        Accordion Menu
+      </h1></a
+    >
+
+    <div
+      style="
+        margin: auto;
+        margin-top: 3rem;
+        /* background-color: #dadde0; */
+        border: 1px solid #ffffff;
+        border-radius: 2rem;
+        width: 40rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      "
+    >
+      <div class="accordion">
+        <div class="accordion-tab">
+          <input
+            type="radio"
+            id="toggle1"
+            class="accordion-toggle"
+            name="toggle"
+          />
+          <label for="toggle1">Pure CSS Accordion 1</label>
+          <div class="accordion-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              porro incidunt quidem dolores repellat quo, aliquid ducimus
+              quaerat rerum eligendi delectus iure nulla harum facilis,
+              doloribus perferendis cum. Unde, cum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur reprehenderit autem illum atque, quia quos!
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-tab">
+          <input
+            type="radio"
+            id="toggle2"
+            class="accordion-toggle"
+            name="toggle"
+          />
+          <label for="toggle2">Pure CSS Accordion 2</label>
+          <div class="accordion-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              porro incidunt quidem dolores repellat quo, aliquid ducimus
+              quaerat rerum eligendi delectus iure nulla harum facilis,
+              doloribus perferendis cum. Unde, cum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur reprehenderit autem illum atque, quia quos!
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-tab">
+          <input
+            type="radio"
+            id="toggle3"
+            class="accordion-toggle"
+            name="toggle"
+          />
+          <label for="toggle3">Pure CSS Accordion 3</label>
+          <div class="accordion-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              porro incidunt quidem dolores repellat quo, aliquid ducimus
+              quaerat rerum eligendi delectus iure nulla harum facilis,
+              doloribus perferendis cum. Unde, cum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur reprehenderit autem illum atque, quia quos!
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-tab">
+          <input
+            type="radio"
+            id="toggle4"
+            class="accordion-toggle"
+            name="toggle"
+          />
+          <label for="toggle4">Pure CSS Accordion 4</label>
+          <div class="accordion-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              porro incidunt quidem dolores repellat quo, aliquid ducimus
+              quaerat rerum eligendi delectus iure nulla harum facilis,
+              doloribus perferendis cum. Unde, cum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur reprehenderit autem illum atque, quia quos!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>

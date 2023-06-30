@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 2000px;
+}
+
+#heading {
+  color: #257cff;
+  font-size: 5rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 4rem;
+  /* border: 3px dotted #ccc; */
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  /* border: 2px solid #257cff; */
+  border-radius: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 4rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box {
+  font-size: 2rem;
+  /* border: 2px solid #257cff; */
+  border-radius: 2rem;
+  font-weight: bold;
+  text-align: center;
+  /* color: #257cff; */
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+a {
+  color: #257cff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff6f25;
+  text-decoration: underline;
+}
+
+#goBackBtnContainer {
+  position: relative;
+}
+
+.goBackBtn {
+  background-color: red;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+  border: 3px solid red;
+  font-weight: bold;
+  cursor: pointer;
+  position: fixed;
+  margin-top: -3rem;
+  margin-left: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.goBackBtn:hover {
+  color: red;
+  background-color: white;
+}
