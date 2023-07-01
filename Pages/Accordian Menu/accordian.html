@@ -11,13 +11,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="accordian.css" />
-    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/Components/footer.css">
   </head>
 
   <body>
     <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
 
-    <a href="../index.html">
+    <a href="/index.html">
       <h1 id="heading">HTML CSS JS Mini Projects</h1>
     </a>
 
@@ -140,8 +141,19 @@
     <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
       Top
     </button>
+    <div id="footer"></div>
+
+    <div id="lastC">
+      <p>
+        "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+        Global Privacy Policy • Feedback"
+      </p>
+      <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
+    </div>
   </body>
 </html>
+
+<script src="/index.js"></script>
 
 <script>
   function goBack() {
@@ -149,4 +161,8 @@
   }
 </script>
 
-<script src="../index.js"></script>
+<script type="module">
+  import footerJS from "/Components/footer.js";
+
+  footerJS();
+</script>

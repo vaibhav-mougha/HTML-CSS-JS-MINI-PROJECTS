@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML CSS JS Mini Projects</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./Components/footer.css" />
   </head>
   <body>
     <a href="index.html">
@@ -13,7 +14,7 @@
     </a>
     <div id="container">
       <div class="box">
-        <a href="./Accordian Menu/accordian.html">Accordian Menu</a>
+        <a href="./Pages/Accordian Menu/accordian.html">Accordian Menu</a>
       </div>
       <div class="box"><a href="">Animated Link Button</a></div>
       <div class="box">DropDown Menu</div>
@@ -25,6 +26,22 @@
     <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
       Top
     </button>
+
+    <div id="footer"></div>
+
+    <div id="lastC">
+      <p>
+        "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+        Global Privacy Policy • Feedback"
+      </p>
+      <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
+    </div>
   </body>
 </html>
 <script src="index.js"></script>
+
+<script type="module">
+  import footerJS from "./Components/footer.js";
+
+  footerJS();
+</script>
