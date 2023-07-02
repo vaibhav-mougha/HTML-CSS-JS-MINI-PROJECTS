@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DropDown Menu</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="DropDownMenu.module.css" />
+    <link rel="stylesheet" href="/Components/footer.css" />
+  </head>
+  <body>
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+
+    <a href="/index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="DropDownMenu.html"
+      ><h1
+        style="
+          color: #1e9a5d;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 12rem;
+        "
+      >
+        Pure CSS DropDown Menu
+      </h1></a
+    >
+
+    <div
+      style="
+        margin: auto;
+        margin-top: 3rem;
+        /* background-color: #dadde0; */
+        /* border: 1px solid black; */
+        border-radius: 1rem;
+        width: 53rem;
+        height: 14rem;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      "
+    >
+      <div id="menu">
+        <ul>
+          <li><a href="#">Menu 1</a></li>
+          <li>
+            <a href="#">Menu 2</a>
+            <ul>
+              <li><a href="#">Sub Menu 1</a></li>
+              <li>
+                <a href="#">Sub Menu 2</a>
+                <ul>
+                  <li><a href="#">Deep Menu 1</a></li>
+                  <li>
+                    <a href="#">Deep Menu 2</a>
+                    <ul>
+                      <li><a href="#">Sub Deep Menu 1</a></li>
+                      <li><a href="#">Sub Deep Menu 2</a></li>
+                      <li><a href="#">Sub Deep Menu 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Deep Menu 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Sub Menu 3</a></li>
+              <li><a href="#">Sub Menu 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Menu 3</a></li>
+          <li>
+            <a href="#">Menu 4</a>
+            <ul>
+              <li><a href="#">Sub Menu 1</a></li>
+              <li><a href="#">Sub Menu 2</a></li>
+              <li><a href="#">Sub Menu 3</a></li>
+              <li><a href="#">Sub Menu 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Menu 5</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+      Top
+    </button>
+    <div id="footer"></div>
+
+    <div id="lastC">
+      <p>
+        "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+        Global Privacy Policy • Feedback"
+      </p>
+      <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
+    </div>
+  </body>
+</html>
+
+<script src="/index.js"></script>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+<script type="module">
+  import footerJS from "/Components/footer.js";
+
+  footerJS();
+</script>
