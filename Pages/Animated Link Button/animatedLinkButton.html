@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Link Button</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/Components/footer.css" />
+  </head>
+
+  <style>
+    .btn {
+      border: 1px solid #943120;
+      border-radius: 2rem;
+      color: #943120;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
+      text-decoration: none;
+      padding: 1rem 3rem;
+      display: inline-block;
+      position: relative;
+      transition: all 0.5s ease 0s;
+    }
+
+    .btn:after {
+      background: #943120;
+      content: "";
+      position: absolute;
+      border-radius: 2rem;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      z-index: -1;
+      transition: all 0.5s ease 0s;
+    }
+
+    .btn:hover {
+      color: #fff;
+    }
+
+    .btn:hover:after {
+      width: 100%;
+    }
+  </style>
+
+  <body>
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+
+    <a href="/index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="animatedLinkButton.html"
+      ><h1
+        style="
+          color: #943120;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 12rem;
+        "
+      >
+        Animated Link Button
+      </h1></a
+    >
+
+    <div
+      style="
+        margin: auto;
+        margin-top: 4rem;
+        padding: 1rem;
+        /* background-color: #dadde0; */
+        border: 1px solid #ffffff;
+        border-radius: 2rem;
+        width: 12rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      "
+    >
+      <a href="" class="btn">Save</a>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+      Top
+    </button>
+    <div id="footer"></div>
+
+    <div id="lastC">
+      <p>
+        "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+        Global Privacy Policy • Feedback"
+      </p>
+      <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
+    </div>
+  </body>
+</html>
+
+<script src="/index.js"></script>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+<script type="module">
+  import footerJS from "/Components/footer.js";
+
+  footerJS();
+</script>
