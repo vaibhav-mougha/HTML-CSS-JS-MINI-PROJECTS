@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Dialogue Box</title>
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/Components/footer.css" />
+  </head>
+  <body>
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+
+    <a href="/index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="modal.html"
+      ><h1
+        style="
+          color: #dd5135;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 12rem;
+        "
+      >
+        Modal Box in Pure CSS
+      </h1></a
+    >
+
+    <div
+      style="
+        margin: auto;
+        margin-top: 3rem;
+        padding: 3rem 0;
+        /* background-color: #dadde0; */
+        border: 1px solid #ffffff;
+        border-radius: 2rem;
+        width: 90%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      "
+    >
+      <div class="container">
+        <div class="modal-container">
+          <input type="checkbox" id="modal-toggle" />
+          <label for="modal-toggle" class="modal-btn">Click Me</label>
+          <div class="modal-backdrop"></div>
+
+          <div class="modal-content">
+            <label for="modal-toggle" class="modal-close">&times;</label>
+            <h2 style="color: black">Modal Title</h2>
+            <p style="padding-top: 1rem">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+              illo quas recusandae in cupiditate nostrum temporibus, nam eum sed
+              ad.
+            </p>
+            <label for="modal-toggle" class="modal-content-btn">OK</label>
+          </div>
+        </div>
+
+        <p style="padding-top: 2.7rem">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum,
+          enim? Suscipit rem minus cupiditate facere soluta explicabo tempore
+          deserunt saepe totam iure, perspiciatis, commodi, quisquam voluptatum
+          fugiat dolores voluptatem voluptate. Eaque repellat labore nihil
+          suscipit ex culpa, eum dolores magni quis laboriosam excepturi
+          obcaecati recusandae, ducimus quas consectetur ullam hic officia
+          commodi aperiam, accusantium illum? Velit ut odio doloremque,
+          cupiditate ratione molestiae fugiat, distinctio possimus vel quibusdam
+          earum eveniet eius, facilis quo voluptatibus animi error! Aspernatur
+          ratione similique soluta quas voluptate ipsa dicta repudiandae,
+          voluptatem maiores magni ex minima pariatur veniam? Est maiores
+          blanditiis nam vero reiciendis sequi possimus perspiciatis fuga,
+          voluptatem rem aliquid voluptates hic quibusdam quisquam quasi ipsa
+          consequuntur labore. Repellat, tempora? Eos exercitationem suscipit
+          nihil obcaecati vitae pariatur totam quaerat maxime architecto
+          recusandae dolorum, amet hic dicta? Itaque voluptatum, voluptatem
+          beatae nemo iste possimus placeat id nisi? Sunt numquam blanditiis
+          perspiciatis commodi in nisi accusamus quibusdam assumenda
+          necessitatibus? Delectus repudiandae quaerat nihil doloremque placeat
+          sunt amet facilis sit nesciunt qui iste repellat magni fuga asperiores
+          similique architecto voluptatum excepturi accusamus, commodi aliquid
+          iure assumenda impedit harum. Deserunt adipisci quo quos magnam sit,
+          recusandae quis fugit? Molestiae doloribus nesciunt libero autem nihil
+          fugit quam beatae sapiente ipsam aspernatur.
+        </p>
+      </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+      Top
+    </button>
+    <div id="footer"></div>
+
+    <div id="lastC">
+      <p>
+        "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+        Global Privacy Policy • Feedback"
+      </p>
+      <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
+    </div>
+  </body>
+</html>
+
+<script src="/index.js"></script>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+<script type="module">
+  import footerJS from "/Components/footer.js";
+
+  footerJS();
+</script>
