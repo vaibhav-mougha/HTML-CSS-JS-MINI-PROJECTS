@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expanding Super Heroes Card</title>
+    <link rel="stylesheet" href="ExpandingSuperHeroesCard.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/Components/footer.css" />
+  </head>
+  <body>
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+
+    <a href="/index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="ExpandingSuperHeroesCard.html"
+      ><h1
+        style="
+          color: #d93539;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 12rem;
+        "
+      >
+        Expanding Super Heroes Card
+      </h1></a
+    >
+
+    <div class="heroes">
+      <div class="container">
+        <div
+          class="panel"
+          style="
+            background-image: url('https://wallpapercave.com/wp/wp11799657.jpg');
+          "
+        >
+          <h3>Iron Man</h3>
+        </div>
+
+        <div
+          class="panel"
+          style="
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/760/1000/947/spiderman-ps4-spiderman-games-hd-wallpaper-preview.jpg');
+          "
+        >
+          <h3>Spider-Man</h3>
+        </div>
+
+        <div
+          class="panel active"
+          style="
+            background-image: url('https://w0.peakpx.com/wallpaper/282/71/HD-wallpaper-dragon-ball-vegeta-vegeta-dragon-ball-anime-artist-artwork-digital-art-behance.jpg');
+          "
+        >
+          <h3>Vegeta</h3>
+        </div>
+
+        <div
+          class="panel"
+          style="
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/173/832/870/movies-batman-the-dark-knight-batman-begins-wallpaper-preview.jpg');
+          "
+        >
+        <h3>Batman</h3>
+        </div>
+        
+        <div
+          class="panel"
+          style="
+            background-image: url('https://images.hdqwalls.com/wallpapers/bthumb/wolverine-showing-claws-to.jpg');
+          "
+        >
+          <h3>Wolverine</h3>
+        </div>
+      </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+      Top
+    </button>
+    <div id="footer"></div>
+
+    <div id="lastC">
+      <p>
+        "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+        Global Privacy Policy • Feedback"
+      </p>
+      <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
+    </div>
+  </body>
+</html>
+
+<script src="ExpandingSuperHeroesCard.js"></script>
+
+<script src="/index.js"></script>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+<script type="module">
+  import footerJS from "/Components/footer.js";
+
+  footerJS();
+</script>
