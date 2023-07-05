@@ -24,6 +24,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   /* border: 2px solid #257cff; */
+  background: #f4f4f4;
   border-radius: 2rem;
   width: 90%;
   margin: auto;
@@ -35,12 +36,17 @@
 .box {
   font-size: 2rem;
   /* border: 2px solid #257cff; */
+  background: #ffffff;
   border-radius: 2rem;
   font-weight: bold;
   text-align: center;
   /* color: #257cff; */
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box:hover {
+  background-color: yellow;
 }
 
 a {
