@@ -19,7 +19,7 @@
   /* border: 3px dotted #ccc; */
 }
 
-#container {
+#containor {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
