@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pure CSS Tabs</title>
+    <link rel="stylesheet" href="tab.css" />
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+
+    <a href="/index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="tabs.html"
+      ><h1
+        style="
+          color: #ffffff;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 12rem;
+        "
+      >
+        Pure CSS Tabs
+      </h1></a
+    >
+
+    <div style="width: 60%; margin: auto; margin-top: 4rem">
+      <ul class="tab-wrap">
+        <li>
+          <input type="radio" id="tab-1" name="tab" checked />
+          <label for="tab-1">Tab 1</label>
+          <div class="tab-content">
+            <h2 style="margin: 1rem 0">Tab 1</h2>
+            <p style="margin: 1.7rem 0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              incidunt ipsa porro reiciendis perspiciatis qui debitis nihil quis
+              deserunt, ipsum iste facilis dolorem sint nemo nesciunt, nobis
+              enim quos. Illo molestias expedita explicabo magni qui!
+              Perspiciatis nemo sit laborum exercitationem ex nulla aliquam
+              quisquam iste libero id possimus beatae cum dolorem veritatis ut,
+              quis dicta aperiam accusantium veniam alias deserunt.
+            </p>
+            <p style="margin: 1.7rem 0">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+              distinctio suscipit veritatis quis enim unde placeat ullam
+              recusandae aliquid necessitatibus?
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <input type="radio" id="tab-2" name="tab" />
+          <label for="tab-2">Tab 2</label>
+          <div class="tab-content">
+            <h2 style="margin: 1rem 0">Tab 2</h2>
+            <p style="margin: 1.7rem 0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              incidunt ipsa porro reiciendis perspiciatis qui debitis nihil quis
+              deserunt, ipsum iste facilis dolorem sint nemo nesciunt, nobis
+              enim quos.
+            </p>
+            <p style="margin: 1.7rem 0">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+              distinctio suscipit veritatis quis enim unde placeat ullam
+              recusandae aliquid necessitatibus?
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <input type="radio" id="tab-3" name="tab" />
+          <label for="tab-3">Tab 3</label>
+          <div class="tab-content">
+            <h2 style="margin: 1rem 0">Tab 3</h2>
+            <p style="margin: 1.7rem 0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              incidunt ipsa porro reiciendis perspiciatis qui debitis nihil quis
+              deserunt
+            </p>
+            <p style="margin: 1.7rem 0">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+              distinctio suscipit veritatis quis enim unde placeat ullam
+              recusandae aliquid necessitatibus? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Molestias enim ea, sapiente officiis
+              architecto saepe!
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+      Top
+    </button>
+  </body>
+</html>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>

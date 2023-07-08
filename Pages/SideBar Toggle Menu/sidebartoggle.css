@@ -97,6 +97,6 @@ body {
 }
 
 #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
-    transform: rotate(-135deg);
-    margin-top: -10px;
-  }
+  transform: rotate(-135deg);
+  margin-top: -10px;
+}
