@@ -46,17 +46,12 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.box:hover {
-  background-color: #fc766a;
-}
-
 a {
   color: #257cff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffffff;
   text-decoration: underline;
 }
 
