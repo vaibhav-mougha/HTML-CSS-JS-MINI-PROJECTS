@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Input Wave</title>
+    <link rel="stylesheet" href="FormInputWave.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/Components/footer.css" />
+  </head>
+  <body>
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+
+    <a href="/index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="FormInputWave.html"
+      ><h1
+        style="
+          color: #FFFFFF;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 12rem;
+        "
+      >
+        Form Input Wave
+      </h1></a
+    >
+
+    <div
+      style="
+        margin: auto;
+        margin-top: 3rem;
+        /* padding: 3rem 0; */
+        /* background-color: #dadde0; */
+        border: 1px solid #ffffff;
+        border-radius: 2rem;
+        width: 30%;
+        /* padding: 2rem; */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      "
+    >
+      <div class="container">
+        <h1>Please Login</h1>
+        <form>
+          <div class="form-control">
+            <input type="text" required />
+            <label>Email</label>
+            <!-- <label>
+              <span style="transition-delay: 0ms">E</span>
+                <span style="transition-delay: 50ms">m</span>
+                <span style="transition-delay: 100ms">a</span>
+                <span style="transition-delay: 150ms">i</span>
+                <span style="transition-delay: 200ms">l</span>
+          </label> -->
+          </div>
+
+          <div class="form-control">
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+
+          <button class="btn">Login</button>
+
+          <p class="text">Don't have an account? <a href="#">Register</a></p>
+        </form>
+      </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+      Top
+    </button>
+    <div id="footer"></div>
+
+    <div id="lastC">
+      <p>
+        "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+        Global Privacy Policy • Feedback"
+      </p>
+      <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
+    </div>
+  </body>
+</html>
+
+<script src="/index.js"></script>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+<script type="module">
+  import footerJS from "/Components/footer.js";
+
+  footerJS();
+</script>
+
+<script src="FormInputWave.js"></script>
