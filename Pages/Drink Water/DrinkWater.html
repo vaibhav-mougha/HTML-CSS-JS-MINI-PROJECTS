@@ -4,14 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Incrementing Counter</title>
-    <link rel="stylesheet" href="IncrementingCounter.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
+    <title>Drink Water</title>
+    <link rel="stylesheet" href="DrinkWater.css" />
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="/Components/footer.css" />
   </head>
@@ -22,17 +16,17 @@
       <h1 id="heading">HTML CSS JS Mini Projects</h1>
     </a>
 
-    <a href="IncrementingCounter.html"
+    <a href="DrinkWater.html"
       ><h1
         style="
-          color: #8e44ad;
+          color: #144fc6;
           font-size: 3rem;
           text-decoration: underline;
           text-align: center;
           margin-top: 12rem;
         "
       >
-        Incrementing Counter
+        Drink Water
       </h1></a
     >
 
@@ -42,31 +36,36 @@
         margin-top: 3rem;
         border: 1px solid #ffffff;
         border-radius: 2rem;
-        width: 90%;
+        width: 80%;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       "
     >
-      <div class="incre">
-        <div class="counter-container">
-          <i class="fab fa-facebook fa-3x"></i>
-          <div class="counter" data-target="100000"></div>
-          <span>Facebook Users</span>
+      <div class="drink">
+        <h1>Goal: 2 Liters</h1>
+
+        <div class="cup">
+          <div class="remained" id="remained">
+            <span id="liters"></span>
+            <small>Remained</small>
+          </div>
+
+          <div class="percentage" id="percentage"></div>
         </div>
 
-        <div class="counter-container">
-          <i class="fab fa-twitter fa-3x"></i>
-          <div class="counter" data-target="10000"></div>
-          <span>Twitter Followers</span>
-        </div>
+        <p class="text">Select how many glasses of water that you have drank</p>
 
-        <div class="counter-container">
-          <i class="fab fa-youtube fa-3x"></i>
-          <div class="counter" data-target="5000000"></div>
-          <span>YouTube Subscribers</span>
+        <div class="cups">
+          <div class="cup cup-small">250 ml</div>
+          <div class="cup cup-small">250 ml</div>
+          <div class="cup cup-small">250 ml</div>
+          <div class="cup cup-small">250 ml</div>
+          <div class="cup cup-small">250 ml</div>
+          <div class="cup cup-small">250 ml</div>
+          <div class="cup cup-small">250 ml</div>
+          <div class="cup cup-small">250 ml</div>
         </div>
       </div>
     </div>
-
     <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
       Top
     </button>
@@ -96,4 +95,4 @@
   footerJS();
 </script>
 
-<script src="IncrementingCounter.js"></script>
+<script src="DrinkWater.js"></script>
