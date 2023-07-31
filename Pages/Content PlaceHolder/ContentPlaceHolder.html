@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content PlaceHolder Card</title>
+    <link rel="stylesheet" href="ContentPlaceHolder.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/Components/footer.css" />
+  </head>
+  <body>
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+
+    <a href="/index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="ContentPlaceHolder.html"
+      ><h1
+        style="
+          color: #dd5135;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 12rem;
+        "
+      >
+        Content PlaceHolder Card
+      </h1></a
+    >
+
+    <div class="card">
+      <div class="card-header animated-bg" id="header">&nbsp;</div>
+
+      <div class="card-content">
+        <h3 class="card-title animated-bg animated-bg-text" id="title">
+          &nbsp;
+        </h3>
+        <p class="card-excerpt" id="excerpt">
+          &nbsp;
+          <span class="animated-bg animated-bg-text">&nbsp;</span>
+          <span class="animated-bg animated-bg-text">&nbsp;</span>
+          <span class="animated-bg animated-bg-text">&nbsp;</span>
+        </p>
+        <div class="author">
+          <div class="profile-img animated-bg" id="profile_img">&nbsp;</div>
+          <div class="author-info">
+            <strong class="animated-bg animated-bg-text" id="name"
+              >&nbsp;</strong
+            >
+            <small class="animated-bg animated-bg-text" id="date">&nbsp;</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+      Top
+    </button>
+    <div id="footer"></div>
+
+    <div id="lastC">
+      <p>
+        "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+        Global Privacy Policy • Feedback"
+      </p>
+      <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
+    </div>
+  </body>
+</html>
+
+<script src="/index.js"></script>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+<script type="module">
+  import footerJS from "/Components/footer.js";
+
+  footerJS();
+</script>
+
+<script src="ContentPlaceHolder.js"></script>
