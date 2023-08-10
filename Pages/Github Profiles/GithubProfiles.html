@@ -1,14 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Github Profiles</title>
-    <link rel="stylesheet" href="GithubProfiles.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="GithubProfiles.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/Components/footer.css" />
+  </head>
+  <body>
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+
+    <a href="/index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="GithubProfiles.html"
+      ><h1
+        style="
+          color: #2a2a72;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 12rem;
+        "
+      >
+        Search Github Profiles
+      </h1></a
+    >
+
+    <div
+      style="
+        margin: auto;
+        margin-top: 3rem;
+        border-radius: 2rem;
+        width: 70%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      "
+    >
+      <div class="content">
+        <form class="user-form" id="form">
+          <input type="text" id="search" placeholder="Search a Github User" />
+        </form>
+
+        <main id="main"></main>
+      </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+      Top
+    </button>
+    <div id="footer"></div>
+
+    <div id="lastC">
+      <p>
+        "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+        Global Privacy Policy • Feedback"
+      </p>
+      <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
+    </div>
+  </body>
 </html>
+
+<script src="/index.js"></script>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+<script type="module">
+  import footerJS from "/Components/footer.js";
+
+  footerJS();
+</script>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+  integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+  crossorigin="anonymous"
+></script>
+
 <script src="GithubProfiles.js"></script>
