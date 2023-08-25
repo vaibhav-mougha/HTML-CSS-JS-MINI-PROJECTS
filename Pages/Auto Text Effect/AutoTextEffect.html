@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Text Effect</title>
+    <link rel="stylesheet" href="AutoTextEffect.css">
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/Components/footer.css" />
+  </head>
+  <body>
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+
+    <a href="/index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="modal.html"
+      ><h1
+        style="
+          color: #dd5135;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 12rem;
+        "
+      >
+        Modal Box in Pure CSS
+      </h1></a
+    >
+
+    <div
+      style="
+        margin: auto;
+        margin-top: 3rem;
+        padding: 3rem 0;
+        /* background-color: #dadde0; */
+        border: 1px solid #ffffff;
+        border-radius: 2rem;
+        width: 90%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      "
+    >
+
+</div>
+    
+    <h1 id="text">Starting...</h1>
+
+    <div>
+      <label for="speed">Text Speed:</label>
+      <input type="number" name="speed" id="speed" value="1" min="1" max="10" step="1">
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+        Top
+      </button>
+      <div id="footer"></div>
+  
+      <div id="lastC">
+        <p>
+          "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+          Global Privacy Policy • Feedback"
+        </p>
+        <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
+      </div>
+    </body>
+  </html>
+  
+  <script src="/index.js"></script>
+  
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+  
+  <script type="module">
+    import footerJS from "/Components/footer.js";
+  
+    footerJS();
+  </script>
+  
+<script src="AutoTextEffect.js"></script>
