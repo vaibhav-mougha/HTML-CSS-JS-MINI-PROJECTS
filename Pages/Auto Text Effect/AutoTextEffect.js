@@ -1,6 +1,6 @@
 const textEl = document.getElementById("text");
 const speedEl = document.getElementById("speed");
-const text = "Eat ( ); Sleep ( ); Code ( ); Repeat ( );";
+const text = "Eat ( );    Sleep ( );    Code ( );    Repeat ( );";
 let idx = 1;
 let speed = 300 / speedEl.value;
 
