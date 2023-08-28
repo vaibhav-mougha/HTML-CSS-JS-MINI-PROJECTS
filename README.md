@@ -59,6 +59,8 @@ This website provides a collection of small web projects created using HTML, CSS
 
 
 Source Code(GitHub link):- https://github.com/vaibhav-mougha/HTML-CSS-JS-MINI-PROJECTS
+<br/>
+Email:- moughavaibhav@gmail.com
 
 ## Show your support
 
