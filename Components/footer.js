@@ -8,8 +8,8 @@ function footerJS() {
    <!-- Footer module content -->
    <div>
    <p>Quick Links :</p>
-   <a href="../Accordian Menu/accordian.html"><p>Accordian</p></a>
-   <a href="../Accordian Menu/accordian.html"><p>Accordian</p></a>
+   <a href="../Pages/Accordian Menu/accordian.html"><p>Accordian</p></a>
+   <a href="../Pages/Animated CountDown/AnimatedCountDown.html"><p>Animated CountDown</p></a>
    <a href="../Accordian Menu/accordian.html"><p>Accordian</p></a>
    <a href="../Accordian Menu/accordian.html"><p>Accordian</p></a>
    <a href="../Accordian Menu/accordian.html"><p>Accordian</p></a>
