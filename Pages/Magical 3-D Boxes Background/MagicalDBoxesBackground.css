@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.magic {
+  background-color: #ffffff;
+  color: #6f1a2e;
+  font-family: "Poppins", sans-serif;
+  border: 0;
+  border-radius: 115px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 12px 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 17rem;
+  right: 75rem;
+  letter-spacing: 1px;
+  box-shadow: 0 3px yellow;
+  z-index: 100;
+  border: 3px solid #6f1a2e;
+}
+
+.magic:focus {
+  outline: none;
+}
+
+.magic:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.boxes.big {
+  width: 600px;
+  height: 600px;
+}
+
+.boxes.big .box {
+  transform: rotateZ(360deg);
+}
+
+.box {
+  background-image: url("https://media.tenor.com/p9aqvE3NtS4AAAAd/iron-man-tony-stark.gif");
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  position: relative;
+  height: 125px;
+  width: 125px;
+  transition: 0.4s ease;
+}
+
+.box::after {
+  content: "";
+  background-color: #ecc971;
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  transform: skewY(45deg);
+}
+
+.box::before {
+  content: "";
+  background-color: #6f1a2e;
+  position: absolute;
+  bottom: -15px;
+  left: 8px;
+  height: 15px;
+  width: 100%;
+  transform: skewX(45deg);
+}

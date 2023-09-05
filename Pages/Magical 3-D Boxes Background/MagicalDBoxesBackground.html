@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magical 3-D Boxes</title>
+    <link rel="stylesheet" href="MagicalDBoxesBackground.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/Components/footer.css" />
+  </head>
+  <body>
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+
+    <a href="/index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="MagicalDBoxesBackground.html"
+      ><h1
+        style="
+          color: #6f1a2e;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 12rem;
+        "
+      >
+        Magical 3-D Boxes
+      </h1></a
+    >
+
+    <div
+      style="
+        margin: auto;
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2rem;
+        width: fit-content;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 2rem;
+      "
+    >
+      <button id="btn" class="magic">Magic 🎩</button>
+      <div id="boxes" class="boxes big"></div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+      Top
+    </button>
+    <div id="footer"></div>
+
+    <div id="lastC">
+      <p>
+        "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+        Global Privacy Policy • Feedback"
+      </p>
+      <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
+    </div>
+  </body>
+</html>
+
+<script src="/index.js"></script>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+<script type="module">
+  import footerJS from "/Components/footer.js";
+
+  footerJS();
+</script>
+
+<script src="MagicalDBoxesBackground.js"></script>
