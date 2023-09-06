@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Verification</title>
+    <link rel="stylesheet" href="EmailVerification.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/Components/footer.css" />
+  </head>
+  <body>
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+
+    <a href="/index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="EmailVerification.html"
+      ><h1
+        style="
+          color: #757575;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 12rem;
+        "
+      >
+        Email Verification
+      </h1></a
+    >
+
+    <div
+      style="
+        margin: auto;
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2rem;
+        padding: 2rem;
+        width: fit-content;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      "
+    >
+      <div class="container">
+        <h1>Verify Your Account</h1>
+        <p>
+          We emailed you the six digit code to moughavaibhav@email.com <br />
+          Enter the code below to confirm your email address.
+        </p>
+        <div class="code-container">
+          <input
+            type="number"
+            class="code"
+            placeholder="0"
+            min="0"
+            max="9"
+            required
+          />
+          <input
+            type="number"
+            class="code"
+            placeholder="0"
+            min="0"
+            max="9"
+            required
+          />
+          <input
+            type="number"
+            class="code"
+            placeholder="0"
+            min="0"
+            max="9"
+            required
+          />
+          <input
+            type="number"
+            class="code"
+            placeholder="0"
+            min="0"
+            max="9"
+            required
+          />
+          <input
+            type="number"
+            class="code"
+            placeholder="0"
+            min="0"
+            max="9"
+            required
+          />
+          <input
+            type="number"
+            class="code"
+            placeholder="0"
+            min="0"
+            max="9"
+            required
+          />
+        </div>
+        <small class="info">
+          This is design only. We didn't actually send you an email as we don't
+          have your email, right?
+        </small>
+      </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+      Top
+    </button>
+    <div id="footer"></div>
+
+    <div id="lastC">
+      <p>
+        "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+        Global Privacy Policy • Feedback"
+      </p>
+      <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
+    </div>
+  </body>
+</html>
+
+<script src="/index.js"></script>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+<script type="module">
+  import footerJS from "/Components/footer.js";
+
+  footerJS();
+</script>
+
+<script src="EmailVerification.js"></script>
