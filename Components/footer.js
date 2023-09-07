@@ -10,9 +10,9 @@ function footerJS() {
    <p>Quick Links :</p>
    <a href="../Pages/Accordian Menu/accordian.html"><p>Accordian</p></a>
    <a href="../Pages/Animated CountDown/AnimatedCountDown.html"><p>Animated CountDown</p></a>
-   <a href="../Accordian Menu/accordian.html"><p>Accordian</p></a>
-   <a href="../Accordian Menu/accordian.html"><p>Accordian</p></a>
-   <a href="../Accordian Menu/accordian.html"><p>Accordian</p></a>
+   <a href="../Pages/Animated Link Button/animatedLinkButton.html"><p>Animated Link Button</p></a>
+   <a href="../Pages/Animated Navigation/AnimatedNavigation.html"><p>Animated Navigation</p></a>
+   <a href="../Pages/Auto Text Effect/AutoTextEffect.html"><p>Auto Text Effect</p></a>
 </div>
 <div>
    <p>Quick Links :</p>
