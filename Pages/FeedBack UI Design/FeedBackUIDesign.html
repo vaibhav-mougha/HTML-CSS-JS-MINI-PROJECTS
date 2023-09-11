@@ -12,40 +12,104 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="FeedBackUIDesign.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/Components/footer.css" />
   </head>
   <body>
-    <div id="panel" class="panel-container">
-      <strong
-        >How satisfied are you with our <br />
-        customer support performance?</strong
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+
+    <a href="/index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="FeedBackUIDesign.html"
+      ><h1
+        style="
+          color: black;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 12rem;
+        "
       >
-      <div class="ratings-container">
-        <div class="rating">
-          <img
-            src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-17.png"
-            alt=""
-          />
-          <small>Unhappy</small>
-        </div>
+        FeedBack UI Design
+      </h1></a
+    >
 
-        <div class="rating">
-          <img
-            src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-3.png"
-            alt=""
-          />
-          <small>Neutral</small>
-        </div>
+    <div
+      style="
+        margin: auto;
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2rem;
+        width: fit-content;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 5rem;
+        background-color: #fef9f2;
+      "
+    >
+      <div id="panel" class="panel-container">
+        <strong
+          >How satisfied are you with our <br />
+          customer support performance?</strong
+        >
+        <div class="ratings-container">
+          <div class="rating">
+            <img
+              src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-17.png"
+              alt=""
+            />
+            <small>Unhappy</small>
+          </div>
 
-        <div class="rating active">
-          <img
-            src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-30.png"
-            alt=""
-          />
-          <small>Satisfied</small>
+          <div class="rating">
+            <img
+              src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-3.png"
+              alt=""
+            />
+            <small>Neutral</small>
+          </div>
+
+          <div class="rating active">
+            <img
+              src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-30.png"
+              alt=""
+            />
+            <small>Satisfied</small>
+          </div>
         </div>
+        <button class="btn" id="send">Send Review</button>
       </div>
-      <button class="btn" id="send">Send Review</button>
+    </div>
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+      Top
+    </button>
+    <div id="footer"></div>
+
+    <div id="lastC">
+      <p>
+        "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+        Global Privacy Policy • Feedback"
+      </p>
+      <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
     </div>
   </body>
 </html>
+
+<script src="/index.js"></script>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+<script type="module">
+  import footerJS from "/Components/footer.js";
+
+  footerJS();
+</script>
+
 <script src="FeedBackUIDesign.js"></script>
