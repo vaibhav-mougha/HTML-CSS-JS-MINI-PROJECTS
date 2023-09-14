@@ -9,7 +9,6 @@
 .content {
   font-family: "Open Sans", sans-serif;
   height: 100vh;
-  /* overflow: hidden; */
 }
 
 .slider-container {
@@ -85,7 +84,7 @@ button:focus {
   position: absolute;
   left: 35%;
   top: 50%;
-  z-index: 100;
+  z-index: 0;
 }
 
 .slider-container .action-buttons .down-button {
