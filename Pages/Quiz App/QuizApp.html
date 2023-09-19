@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="QuizApp.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/Components/footer.css" />
+  </head>
+  <body>
+    <button class="goBackBtn" onclick="goBack()"><< Go Back</button>
+
+    <a href="/index.html">
+      <h1 id="heading">HTML CSS JS Mini Projects</h1>
+    </a>
+
+    <a href="QuizApp.html"
+      ><h1
+        style="
+          color: #732d91;
+          font-size: 3rem;
+          text-decoration: underline;
+          text-align: center;
+          margin-top: 12rem;
+        "
+      >
+        Quiz App
+      </h1></a
+    >
+
+    <div
+      style="
+        margin: auto;
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2rem;
+        background-color: #b8c6db;
+        width: fit-content;
+        padding: 3rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      "
+    >
+      <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+          <h2 id="question">Question text</h2>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer" />
+              <label for="a" id="a_text">Question</label>
+            </li>
+
+            <li>
+              <input type="radio" name="answer" id="b" class="answer" />
+              <label for="b" id="b_text">Question</label>
+            </li>
+
+            <li>
+              <input type="radio" name="answer" id="c" class="answer" />
+              <label for="c" id="c_text">Question</label>
+            </li>
+
+            <li>
+              <input type="radio" name="answer" id="d" class="answer" />
+              <label for="d" id="d_text">Question</label>
+            </li>
+          </ul>
+        </div>
+        <button id="submit">Submit</button>
+      </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollButton" title="Go to top">
+      Top
+    </button>
+    <div id="footer"></div>
+
+    <div id="lastC">
+      <p>
+        "Terms of Use • Privacy Policy • Interest-Based Ads • Addendum to the
+        Global Privacy Policy • Feedback"
+      </p>
+      <p>&copy; 2023 HTML CSS JS Mini Projects. All rights reserved.</p>
+    </div>
+  </body>
+</html>
+
+<script src="/index.js"></script>
+
+<script>
+  function goBack() {
+    window.location.href = "/index.html";
+  }
+</script>
+
+<script type="module">
+  import footerJS from "/Components/footer.js";
+
+  footerJS();
+</script>
+
+<script src="QuizApp.js"></script>
